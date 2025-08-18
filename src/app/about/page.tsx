@@ -1,9 +1,13 @@
-export default function AboutPage() {
-  console.log("About page loaded");
+import { cookies } from "next/headers";
+export default async function AboutPage() {
+  const cookieStore = await cookies();
+  const theme = cookieStore.get("theme");
+  console.log(theme);
+  console.log("About server components");
 
   return (
     <div>
-      <h1>About</h1>
+      <h1>About {new Date().toLocaleTimeString()}</h1>
     </div>
   );
 }
