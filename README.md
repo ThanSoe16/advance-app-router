@@ -52,3 +52,27 @@ Route (app)                                 Size  First Load JS
 That is a first time
 
 you can see dynamic rendering ( f symbol )
+
+```bash
+Route (app)                                 Size  First Load JS
+┌ ○ /                                    5.44 kB         105 kB
+├ ○ /_not-found                            990 B         101 kB
+├ ƒ /about                                 131 B        99.7 kB
+├ ○ /dashboard                             131 B        99.7 kB
+├ ○ /products                            3.44 kB         103 kB
+└ ● /products/[id]                         131 B        99.7 kB
+    ├ /products/1
+    ├ /products/2
+    └ /products/3
++ First Load JS shared by all            99.6 kB
+  ├ chunks/4bd1b696-cf72ae8a39fa05aa.js  54.1 kB
+  ├ chunks/964-7a34cadcb7695cec.js       43.5 kB
+  └ other shared chunks (total)           1.9 kB
+
+
+○  (Static)   prerendered as static content
+●  (SSG)      prerendered as static HTML (uses generateStaticParams)
+ƒ  (Dynamic)  server-rendered on demand
+```
+
+you can see generateStaticParams ( ● symbol ). This is preRendering
