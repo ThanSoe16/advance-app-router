@@ -1,5 +1,5 @@
 import { serverSideFunction } from "@/utils/server-utils";
-import { ClientRoutePage } from "../client-route/page";
+import ClientRoutePage from "../client-route/page";
 export default async function ServerRoutePage() {
   const result = serverSideFunction();
   return (
