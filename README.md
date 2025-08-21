@@ -76,3 +76,8 @@ Route (app)                                 Size  First Load JS
 ```
 
 you can see generateStaticParams ( ● symbol ). This is preRendering
+
+Server / Client
+Client / Server ( Server is automatically change to Client)
+Sometime server have only server function. We can't call it in client components.
+At that time we can call with children

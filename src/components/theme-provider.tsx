@@ -12,7 +12,7 @@ type Theme = {
 const defaultTheme: Theme = {
   colors: {
     primary: "#007bff",
-    secondary: "#ff0000",
+    secondary: "#fff000",
   },
 };
 
